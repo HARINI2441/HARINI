@@ -1,0 +1,109 @@
+/* 1. Basic Reset and Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* 2. Header and Navigation */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #225258;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* 3. Hero Section */
+.hero {
+  background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+  text-align: center;
+  color: rgb(10, 10, 10);
+  padding: 5rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-btn {
+  background: #007bff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.cta-btn:hover {
+  background: #0056b3;
+}
+
+/* 4. Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.social-links a {
+  margin: 0 0.5rem;
+  color: #0af;
+  text-decoration: none;
+}
+
+/* 5. Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .cta-btn {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+}
